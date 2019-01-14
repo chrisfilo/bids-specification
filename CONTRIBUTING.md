@@ -35,7 +35,9 @@ How do you know that you're a member of the BIDS community? You're here! You kno
 
 ## Get in touch
 
-<img align="right" width="50%" src="https://neurostars.org/uploads/default/original/1X/1c10370c34ffba83c4b1cfdc443cf2908d848c0b.png" alt="Two github cats working together"/>
+<a href="https://neurostars.org/">
+  <img align="right" width="50%" src="https://neurostars.org/uploads/default/original/1X/1c10370c34ffba83c4b1cfdc443cf2908d848c0b.png" alt="Logo for Neurostars forum"/>
+</a>
 
 ### Help and support using BIDS
 
