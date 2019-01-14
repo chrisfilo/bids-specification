@@ -1,13 +1,39 @@
-# This files DOES NOT list people responsible for maintanance of different parts of 
-# the specification. It merely serves the purpose of notifying interested
-# contributors when a new Pull Request that proposes changes to a particular file
-# is submitted. If you would like to subscribe to such notifications (in a form of a
-# Request for Review) please add your github username next to the file you want to 
-# monitor below.
+# tl;dr: Add your name next to the file you'd like to monitor.
 
-# Add your github name below to get notified about proposed releases
-/src/CHANGES.md @chrisfilo
 
-# Individual sections
-/src/01-common-principles.md @chrisfilo
-/src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md @chrisfilo
+# ====== AN EXPLANATION OF THE CODEOWNERS FILE ============
+
+# You might think that CODEOWNERS is a list of users who OWN the CODE. 
+#
+# That is not in fact the case!
+#
+# This files DOES NOT list people responsible for maintanance of different 
+# parts of the specification.
+#
+# It is a GitHub "special file" (we didn't choose its name) that serves the
+# purpose of notifying interested contributors when a new Pull Request that
+# proposes changes to a particular file is submitted.
+#
+# For example, if you put your username next to /src/01-common-principles.md
+# you will recieve an email from GitHub when someone changes that file.
+#
+# If you would like to subscribe to such notifications (you'll receive a
+# Request for Review from GitHub) please add your github username next to the
+# file you want to monitor below.
+#
+# (If the file doesn't exist yet, you can add it on a new line)
+
+
+# ====== RELEASES =========================================
+# Add your github name on the line below to be notified about proposed releases
+
+/src/CHANGES.md @chrisfilo @KirstieJane
+
+
+# ====== INDIVIDUAL SECTIONS ==============================
+# Add your github name on the line corresponding to the file you would like to 
+# monitor. You will recieve an email from GitHub when someone opens a Pull
+# Request that changes the file.
+
+/src/01-common-principles.md @chrisfilo @KirstieJane
+/src/04-modality-specific-files/01-magnetic-resonance-imaging-data.md @chrisfilo @KirstieJane
