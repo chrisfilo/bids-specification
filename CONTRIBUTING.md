@@ -180,15 +180,27 @@ GitHub has a [nice introduction](https://help.github.com/articles/github-flow/) 
 
 ## Decision making within the BIDS community
 
-The decision-making rules are outlined in [DECISION-MAKING.md](DECISION-MAKING.md).
+The decision-making process is outlined in
+[DECISION-MAKING.md](DECISION-MAKING.md).
 
 ## Recognizing contributions
 
 BIDS follows the
 [all-contributors](https://github.com/kentcdodds/all-contributors)
-specification, so we welcome and recognize all contributions from documentation
-to testing to code development. You can see a list of current contributors in
-the [BIDS specification](src/99-appendices/01-contributors.md).
+specification. We welcome and recognize all contributions from documentation
+to testing to code development.
+
+You can see a list of current contributors in the
+[src/99-appendices/01-contributors.md](src/99-appendices/01-contributors.md)
+file in this repository.
+
+To add yourself (or another contributor) to this document, please submit a pull
+request with your name and the appropriate emojis for your contribution. (For
+example add 💬 if you've responded to questions online or in person, 📋 if you've
+organized an event or 📢 if you've given a talk. See the
+[emoji key](src/99-appendices/01-contributors.md) for all options.) The
+contribution will be reviewed following the decision making process described
+in [DECISION-MAKING.md](DECISION-MAKING.md).
 
 ## Thank you!
 
