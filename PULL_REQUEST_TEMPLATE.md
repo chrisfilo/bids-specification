@@ -4,7 +4,7 @@ Please complete the following sections when you submit your pull request.
 You are encouraged to keep this top level comment box updated as you
 develop and respond to reviews.
 
-Note that text within html comment tags will not be rendered. 
+Note that text within html comment tags will not be rendered.
 -->
 ### Summary
 
@@ -36,7 +36,7 @@ ready for their comments. -->
 * *Lorem ipsum dolor sit amet, consectetur adipiscing.*
 
 
-### How much impact does this update have to the internal consistency of the standard?
+### How much impact does this update have to the internal consistency of the specification?
 
 <!-- Please select one of the boxes.
 
