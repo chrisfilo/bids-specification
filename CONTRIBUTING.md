@@ -1,3 +1,4 @@
+
 # Contributing to the BIDS Specification
 
 **Welcome to the BIDS Specification repository!**
@@ -135,6 +136,10 @@ GitHub has a [nice introduction](https://help.github.com/articles/github-flow/) 
 <br>
 
 <br>
+
+## How the decision to merge a pull request is made?
+
+The decision-making rules are outlined in [DECISION-MAKING.md](DECISION-MAKING.md).
 
 ## Recognizing contributions
 
