@@ -1,47 +1,5 @@
 # Appendix VIII: Preferred Names of Coordinate Systems
 
-## Definitions
-
-### Coordinate System
-
-A coordinate system specifies the information necessary to interpret the
-coordinates associated with the data. A coordinate system can be described by
-its topology (cartesian, spherical, polar, etc.,.), dimensionality, and units of
-measurement along each dimension. Every device that makes spatial measurements
-or has sensors described in a space has a coordinate system (e.g., an MR
-scanner, an MEG scanner, an EEG cap, Polhemus digitizer). The data output by
-most of these devices describe the number of dimensions, the units along each
-dimension, and in some cases the details of origin (for example, time).
-
-### Space, atlas and map
-
-A space/atlas/map is embedded in a coordinate system to ascribe meaning to the
-coordinates. For instance, Scanner, Talairach88, MNI, FS are different
-coordinate systems, while the Talairach atlas, MNI152, and fsaverage ascribe
-meaning to the coordinates in terms of brain anatomy. As an example to
-distinguish coordinate systems and spaces/atlas/maps, a 4D fMRI timeseries
-acquired without motion correction has individual time points all in the same
-coordinate system, but the atlas/map is different (due to motion) in different
-time points.
-
-### Landmarks
-
-Landmarks are properties of the object being measured and can exist in any
-coordinate system in which the object is placed/measured. They can be relevant
-points of the imaged object's structure (i.e. anatomical landmarks) such as the
-anterior commissure in a brain. They can also be fiducials that generate a
-localizable signal that are placed in the intended position before scanning
-(i.e. markers). Positions of landmarks are identified via manual or automated
-algorithms that detect these fiducials in (e.g., MR) or from (e.g., MEG) the
-acquired data or via explicit encoding of position (e.g., EEG sensors,
-headshape/coil digitization).
-
-These landmarks can be coordinates in a file or voxel/pixel intensity relations
-in image files.This information (coordinates or intensity relations)
-representing landmarks of the same or similar object (e.g., a template brain) in
-different coordinate systems can be used to transform the object between
-coordinate systems.
-
 ## Introduction
 
 To interpret a coordinate (x, y, z), it is required that you know relative to
@@ -162,7 +120,7 @@ the units are assumed to be mm.
 
 | Coordinate System                                   | Description                                                                                                                                                                                                                                                                                                                                                      |
 | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| anat                                                | Participant specific anatomical space (for example derived from T1w and/or T2w images). This coordinate system require specifying an additional participant specific file to be fully defined.                                                                                                                                                                   |
+| anat                                                | Participant specific anatomical space (for example derived from T1w and/or T2w images). This coordinate system requires specifying an additional, participant-specific file to be fully defined.                                                                                                                                                                 |
 | FS305                                               | FreeSurfer variant of the MNI305 space                                                                                                                                                                                                                                                                                                                           |
 | MNI152Lin                                           | Also known as ICBM (version with linear coregistration) [http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152Lin](http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152Lin)                                                                                                                                                                                       |
 | MNI152NLin6\[Sym&#124;Asym\]                        | Also known as ICBM 6th generation (non-linear coregistration). Used by SPM99 - SPM8 and FSL (MNI152NLin6Sym). [http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin6](http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin6)                                                                                                                             |
@@ -183,7 +141,7 @@ the units are assumed to be mm.
 
 | Coordinate System                            | Description                                                                                                                                                                                                                                                                                                                 |
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| fsnative                                     | Images were sampled to the FreeSurfer surface reconstructed from the subject’s T1w image. This coordinate system require specifying additional participant specific files to be fully defined.                                                                                                                              |
+| fsnative                                     | Images were sampled to the FreeSurfer surface reconstructed from the subject’s T1w image. This coordinate system requires specifying additional, participant-specific files to be fully defined.                                                                                                                            |
 | fsaverage\[3&#124;4&#124;5&#124;6&#124;sym\] | Images were sampled to the FreeSurfer surface reconstructed from the subject’s T1w image, and registered to an fsaverage template                                                                                                                                                                                           |
 | fsLR\[164k&#124;59k&#124;32k&#124;4k\]       | Images were sampled to the 164k (used by HCP pipelines for 3T and 7T anatomical analysis), 59k (used by HCP pipelines for 7T MRI bold and DWI analysis), 32k (used by HCP pipelines for 3T MRI bold and DWI analysis), or 4k (used by HCP pipelines for MEG analysis) fsaverage_LR surface reconstructed from the T1w image |
 
