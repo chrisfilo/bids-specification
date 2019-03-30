@@ -38,15 +38,31 @@ The supported surface types (`<surftype>` suffix) are:
 | flat         | The flattened surface (used for visualization)                       |
 
 `space` filename keyword is restricted to
-[Surface Coordinate Spaces](../99-appendices/08-coordinate-systems.md#Surface)
-and `volspace` corresponds to the 3D coordinate space described in
+[Surface Coordinate Spaces](../99-appendices/08-coordinate-systems.md#Surface). Some surface pipelines (i.e. HCPPipelines) may output multiple variants of surfaces where 3-dimenensional "point" transforms have also been applied to the surface vertices. These outputs may be differentiated with an additional `volspace` keyword. The `volspace` keyword corresponds to the 3D coordinate space described in
 [Volume Coordinate Spaces](../99-appendices/08-coordinate-systems.md#Volume). In
-contrast to other derivatives the sidecar metadata field `SpatialReference` (see
+contrast to other derivatives the sidecar metadata field `SpatialReferenceVolume` (see
 [Introduction](01-introduction.md#Common-file-level-metadata-fields)) is not
 required for any space, but is recommended when `volspace` is set to
 `individual`. In such case it should point to the volume defining the 3D
 coordinate system with witch the surface mesh is aligned with.
 
+Example: 
+
+```Text
+<pipeline_name>/
+    sub-01/
+        anat/
+            sub-01_hemi-L_space-fsLR_volspace-individual_pial.surf.gii
+            sub-01_hemi-L_space-fsLR_volspace-individual_pial.surf.json
+```
+
+where `sub-01_hemi-L_space-fsLR_volspace-individual_pial.surf.json` contains:
+
+```json
+{
+  "SpatialReferenceVolume": 'sub-01_desc-preproc_T1w.nii.gz'
+}
+```
 ## Surface-Mapped Anatomical Scalar Derivatives
 
 Surface-mapped scalar overlays should be stored as either GIFTI or CIFTI files
